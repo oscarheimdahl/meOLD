@@ -1,0 +1,210 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+html {
+	background: white;
+}
+
+.fixedbackground {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('http://api.thumbr.it/whitenoise-361x370.png?background=171717ff&noise=474747&density=25&opacity=100');
+	background: white;
+	color: #222;
+	z-index: -1;
+	text-align: center;
+}
+.fixedbackground > .intro {
+	position: relative;
+	width: 100vw;
+	height: 400px;
+	top: 10vw;
+	background: ;
+}
+
+.fixedbackground > .intro > h1 {
+	font-size: 10vw;
+}
+.fixedbackground > .intro > h2 {
+	font-size: 2vw;
+}
+#wave1 > canvas {
+	height: 100px;
+}
+
+#wave1 > canvas,
+#wave2 > canvas {
+	display: block;
+}
+
+.about {
+	position: relative;
+	height: calc(10vh + 30vw);
+	background: #4be8a8;
+	color: white;
+}
+
+.about > #about-info {
+	position: relative;
+	left: 14vw;
+	height: 30vw;
+	width: 72vw;
+	padding-bottom: 4vw;
+}
+
+.about > #about-info > #profile {
+	position: absolute;
+	display: inline-block;
+	top: 2vw;
+	left: 0;
+	height: 30vw;
+	width: auto;
+	border: 1px solid white;
+	border-radius: 1000px;
+}
+.about > #about-info > #about-text {
+	position: absolute;
+	display: inline-block;
+	top: 0vw;
+	right: 0;
+	font-size: 1.5vw;
+	font-family: 'Lato';
+	width: 40vw;
+	margin-top: 3vw;
+}
+
+.projects {
+	position: relative;
+	background: white;
+	color: #222;
+	height: 105vw;
+}
+
+.projects > h1 {
+	position: relative;
+	font-size: 3vw;
+	left: 14vw;
+	top: 1vw;
+	display: inline-block;
+}
+
+.projects > .project {
+	position: relative;
+	top: 4vw;
+	left: 14vw;
+	width: 70vw;
+	height: 45vw;
+	margin: 2.5vw 0;
+}
+
+.projects > .project > .projectname {
+	position: relative;
+	top: 0;
+	left: 1vw;
+	font-size: 1.5vw;
+}
+
+.projects > .project > .slide,
+.projects > .project > .projectinfo-container {
+	transition-duration: 0.5s;
+	width: 100%;
+	position: absolute;
+	top: 2vw;
+	left: 0;
+}
+
+.projects > .project > .slide img {
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+.projects > .project > .slide button {
+	width: 2vw;
+	height: 2vw;
+}
+
+.projects > .project > .projectinfo-container > .projectinfo {
+	position: relative;
+	left: 20%;
+	top: 10vw;
+	width: 60%;
+	height: 80%;
+	left: 20%;
+	font-size: 1.5vw;
+}
+
+.projects > .project > .slide:hover {
+	opacity: 0.1;
+}
+.projects > .project > .slide:active {
+	opacity: 0.1;
+}
+
+.footer {
+	width: 100vw;
+	height: 200px;
+	background: #4be8a8;
+}
+
+@media only screen and (max-width: 600px) {
+	.fixedbackground .intro > h1 {
+		font-size: 12vw;
+	}
+
+	.fixedbackground .intro > h2 {
+		font-size: 5vw;
+	}
+	.about {
+	}
+
+	.about > #about-info > #profile {
+		left: 11vw;
+		top: -40vw;
+		height: 50vw;
+	}
+
+	.about > #about-info > #about-text {
+		width: 130%;
+		left: -15%;
+		top: 10vw;
+		font-size: 2.8vw;
+		text-align: center;
+	}
+	.projects {
+		height: 140vw;
+	}
+
+	.projects > h1 {
+		font-size: 5vw;
+	}
+
+	.projects > .project > .projectname {
+		font-size: 3vw;
+		top: -2vw;
+	}
+
+	.projects > .project {
+		left: 2.5vw;
+		width: 95vw;
+		margin-bottom: 15vw;
+	}
+
+	.projects > .project > .projectinfo-container > .projectinfo {
+		left: 20%;
+		top: 5vw;
+		width: 80%;
+		height: 80%;
+		left: 10%;
+		font-size: 3vw;
+	}
+
+	.footer {
+		height: 10vh;
+	}
+}
