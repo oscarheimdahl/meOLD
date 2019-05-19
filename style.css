@@ -59,10 +59,12 @@
 .projects {
 	position: relative;
 	width: 100vw;
-	background: rgb(78, 214, 156);
+	/* background: rgb(78, 214, 156); */
+	background: #222;
 	height: calc(100vh - 20px);
 	text-align: center;
 	padding-top: 30px;
+	color: white;
 }
 
 .projects > h1 {
@@ -72,12 +74,13 @@
 
 .project {
 	padding: 30px 10px;
-	background: #4ed69c;
+	background: #222;
 }
 
 .project > h2 {
 	text-decoration: underline;
 	font-size: 30px;
+	margin-bottom: 10px;
 }
 
 .project > .slide {

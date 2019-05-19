@@ -1,9 +1,12 @@
-let x;
-let bounce = false;
+let ringRadiuses = [];
+let ringsNR = 10;
 function setup() {
 	let canvas = createCanvas(windowWidth, windowHeight);
 	canvas.parent('p5');
-	x = 0;
+	for (let i = 0; i < ringsNR; i++) {
+		ringRadiuses.push((windowWidth / 2 / ringsNR) * i);
+	}
+	noFill();
 }
 
 function windowResized() {
@@ -11,12 +14,12 @@ function windowResized() {
 }
 
 function draw() {
+	stroke(0);
+	strokeWeight(1);
 	background(78, 214, 156);
-	rect(x, 10, 10, 10);
-	if (bounce) x += 10;
-	else {
-		x -= 10;
+	for (let i = 0; i < ringRadiuses.length; i++) {
+		ellipse(windowHeight / 2, windowWidth / 2, ringRadiuses[i] * 2);
+		ringRadiuses[i]++;
+		if (ringRadiuses[i] > windowHeight) ringRadiuses[i] = 0;
 	}
-	if (x + 10 > width) bounce = !bounce;
-	else if (x < 0) bounce = !bounce;
 }
