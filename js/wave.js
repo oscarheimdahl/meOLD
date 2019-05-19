@@ -11,7 +11,7 @@ function windowResized() {
 }
 
 function draw() {
-	background(random(200), random(200), random(200));
+	background(78, 214, 156);
 	rect(x, 10, 10, 10);
 	if (bounce) x += 10;
 	else {
