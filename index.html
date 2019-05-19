@@ -5,25 +5,25 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<script src="modules/p5.js"></script>
-		<script src="modules/p5.dom.js"></script>
-		<script src="modules/jquery-3.3.1.min.js"></script>
-		<!-- <script src="./wave.js"></script> -->
-		<script type="text/javascript" src="modules/slick/slick.min.js"></script>
-		<script src="./projects.js"></script>
-		<script src="./wave2.js"></script>
-		<script src="./about.js"></script>
+		<script src="js/modules/p5.js"></script>
+		<script src="js/modules/p5.dom.js"></script>
+		<script src="js/modules/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/modules/slick/slick.min.js"></script>
+		<script src="js/projects.js"></script>
+		<script src="js/wave.js"></script>
+		<script src="js/about.js"></script>
+		<script src="js/contact.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<title>Oscar Heimdahl</title>
 		<link
 			href="https://fonts.googleapis.com/css?family=Lato|Quicksand"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" type="text/css" href="modules/slick/slick.css" />
+		<link rel="stylesheet" type="text/css" href="js/modules/slick/slick.css" />
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="modules/slick/slick-theme.css"
+			href="js/modules/slick/slick-theme.css"
 		/>
 		<link
 			rel="apple-touch-icon"
@@ -45,43 +45,45 @@
 		<link rel="manifest" href="resources/favicon/site.webmanifest" />
 	</head>
 	<body>
-		<div class="fixedbackground">
-			<div class="intro">
-				<h1>Oscar Heimdahl</h1>
-				<h2>Civilingenjör i Interaktion & Design</h2>
-			</div>
-		</div>
-		<div id="wave1"></div>
-		<div class="about">
-			<div id="about-info">
-				<img src="resources/proffe2.png" alt="Bild på mig" id="profile" />
-				<div id="about-text">
-					<p>
-						Hej! Oscar Heimdahl heter jag och går tredje året på
-						Civilingenjörsutbildningen interaktion och design i Umeå. Jag har
-						alltid gillat datorer att ge saker struktur och ordning. Under min
-						utbildning har jag kommit i kontakt med flera olika arbetssätt inom
-						design och programmering, något jag lärt mig uppskatta och använda
-						dagligen.
-					</p>
-					<br />
-					<p>
-						Då min utbildning till stor del går in på både design och
-						programmering så har jag en väldigt bred kompetens på många områden.
-						Det ger mig förmågan att kunna kommunicera med båda datorvetare och
-						designers, och även kunna agera som en bro mellan dem. Jag föredrar
-						programmering i dagsläget och siktar på att bli en front-end
-						utvecklare.
-					</p>
+		<div>
+			<div id="p5"></div>
+			<div class="clear"></div>
+			<div class="about">
+				<div class="about-content">
+					<img
+						src="resources/proffeScaled.png"
+						alt="Bild på mig"
+						id="profile"
+					/><br />
+					<div class="about-text">
+						<p>
+							Hej! Oscar Heimdahl heter jag och går tredje året på
+							Civilingenjörsutbildningen interaktion och design i Umeå. Jag har
+							alltid gillat datorer att ge saker struktur och ordning. Under min
+							utbildning har jag kommit i kontakt med flera olika arbetssätt
+							inom design och programmering, något jag lärt mig uppskatta och
+							använda dagligen.
+						</p>
+						<br />
+						<p>
+							Då min utbildning till stor del går in på både design och
+							programmering så har jag en väldigt bred kompetens på många
+							områden. Det ger mig förmågan att kunna kommunicera med båda
+							datorvetare och designers, och även kunna agera som en bro mellan
+							dem. Jag föredrar programmering i dagsläget och siktar på att bli
+							en front-end utvecklare.
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div id="wave2"></div>
-		<div class="projects">
-			<h1>Tidigare arbeten</h1>
-			<div class="project">
-				<h1 class="projectname">Typer</h1>
-				<div class="projectinfo-container">
+			<div class="divider"></div>
+			<div class="projects">
+				<h1>Tidigare arbeten</h1>
+				<div class="project">
+					<h2>Typer</h2>
+					<div class="slide" onClick="">
+						<img src="resources/Typer/Typer1.jpg" alt="bild" />
+					</div>
 					<div class="projectinfo">
 						<p>
 							Tjänsten vi skapade tillåter spelare att spela mot varandra genom
@@ -102,13 +104,13 @@
 						</p>
 					</div>
 				</div>
-				<div class="slide">
-					<img src="resources/Typer/Typer1.jpg" alt="bild" />
-				</div>
-			</div>
-			<div class="project">
-				<h1 class="projectname">Konsultuppdrag åt Arboreal</h1>
-				<div class="projectinfo-container">
+				<div class="project">
+					<h2>Konsultuppdrag åt Arboreal</h2>
+					<div class="slide" onClick="">
+						<img src="resources/Arboreal/Arboreal1.png" alt="bild" />
+						<img src="resources/Arboreal/Arboreal2.png" alt="bild" />
+						<img src="resources/Arboreal/Arboreal3.png" alt="bild" />
+					</div>
 					<div class="projectinfo">
 						<p>
 							I projektet hjälpte vi startupen Arboreal med ett designförslag på
@@ -124,17 +126,32 @@
 						</p>
 					</div>
 				</div>
-				<div class="slide">
-					<img src="resources/Arboreal/Arboreal1.png" alt="bild" />
-					<img src="resources/Arboreal/Arboreal2.png" alt="bild" />
-					<img src="resources/Arboreal/Arboreal3.png" alt="bild" />
+
+				<div class="footer">
+					<!-- <span id="phone-text">0730856190</span>
+                    <span id="mail-text">o.heimdahl@gmail.com</span> -->
+					<img
+						id="linkedin"
+						src="resources/contact/phone.svg"
+						alt="linked in icon"
+					/>
+					<img
+						id="linkedin"
+						src="resources/contact/mail.svg"
+						alt="linked in icon"
+					/>
+					<a
+						target="_blank"
+						href="https://www.linkedin.com/in/oscar-heimdahl-9b9428152/"
+					>
+						<img
+							id="linkedin"
+							src="resources/contact/linkedin.svg"
+							alt="linked in icon"
+						/>
+					</a>
 				</div>
 			</div>
-		</div>
-		<div class="footer">
-			<li>o.heimdahl@gmail.com</li>
-			<li>073-0856190</li>
-			<li></li>
 		</div>
 	</body>
 </html>

@@ -9,7 +9,7 @@ function initSlick() {
 		dots: false,
 		autoplay: true,
 		arrows: false,
-		autoplaySpeed: 7000,
+		autoplaySpeed: 4000,
 		centermode: true
 	});
 }
