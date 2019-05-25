@@ -48,8 +48,8 @@
 	font-size: 25px;
 }
 
-.about > .about-content > .about-text::-webkit-scrollbar { 
-    display: none; 
+.about > .about-content > .about-text::-webkit-scrollbar {
+	display: none;
 }
 
 .divider {
@@ -83,8 +83,9 @@
 .project > h2 {
 	font-size: 30px;
 	margin-bottom: 10px;
-/* 	font-family: 'Quicksand';
- */}
+	/* 	font-family: 'Quicksand';
+ */
+}
 
 .project > .slide {
 	width: calc(100vw - 20px);
@@ -105,7 +106,7 @@
 
 .competence {
 	position: relative;
-	width: calc(100vw - 20px);
+	width: 100vw;
 	background: white;
 	display: inline-block;
 	padding: 10px;
@@ -140,7 +141,8 @@
 	margin-top: 5px;
 }
 
-.footer > p > a, .project a {
+.footer > p > a,
+.project a {
 	text-decoration: none;
 	color: white;
 	text-decoration: underline;
