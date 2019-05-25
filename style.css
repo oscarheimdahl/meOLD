@@ -47,6 +47,11 @@
 	max-width: 900px;
 	font-size: 25px;
 	overflow: scroll;
+	overflow-x:hidden;
+}
+
+.about > .about-content > .about-text::-webkit-scrollbar { 
+    display: none; 
 }
 
 .divider {
@@ -78,10 +83,10 @@
 }
 
 .project > h2 {
-	text-decoration: underline;
 	font-size: 30px;
 	margin-bottom: 10px;
-}
+/* 	font-family: 'Quicksand';
+ */}
 
 .project > .slide {
 	width: calc(100vw - 20px);
@@ -94,27 +99,52 @@
 }
 
 .project > .projectinfo {
-	font-size: 25px;
+	font-size: 18px;
+	text-align: left;
 	max-width: 900px;
 	display: inline-block;
 }
 
-.footer {
-	background: white;
-	height: 200px;
-}
-.footer > .footer-content {
+.competence {
+	position: relative;
 	width: calc(100vw - 20px);
-	max-width: 1000px;
-	height: 100%;
+	background: white;
 	display: inline-block;
+	padding: 10px;
+	padding-bottom: 30px;
+	text-align: center;
+	color: black;
+	padding: 30px 0;
 }
 
-.footer > .footer-content > a > img,
-.footer > .footer-content > img {
+.competence > .competence-text {
 	position: relative;
-	height: 100px;
-	width: 25vw;
-	max-width: 300px;
-	top: 50px;
+	display: inline-block;
+	width: calc(100vw - 20px);
+	max-width: 900px;
+	font-size: 25px;
+}
+
+.footer {
+	background: #222;
+	width: 100vw;
+	padding: 30px 0;
+}
+
+.footer > p {
+	position: relative;
+	width: 300px;
+	text-align: center;
+	left: calc(50vw - 150px);
+	margin: 0;
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 5px;
+}
+
+.footer > p > a, .project a {
+	text-decoration: none;
+	color: white;
+	text-decoration: underline;
+	cursor: pointer;
 }
